@@ -1,2 +1,2 @@
-# DevTips
-This is a collection of tips for software development.
+# AndroidDevTips
+This is a collection of tips for Android development.
