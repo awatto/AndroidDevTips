@@ -1,4 +1,4 @@
-From [A detailed guide on developing Android apps using the Clean Architecture pattern] https://medium.com/@dmilicic/a-detailed-guide-on-developing-android-apps-using-the-clean-architecture-pattern-d38d71e94029
+From [A detailed guide on developing Android apps using the Clean Architecture pattern] (https://medium.com/@dmilicic/a-detailed-guide-on-developing-android-apps-using-the-clean-architecture-pattern-d38d71e94029)
 
 #Structure
 The general structure for an Android app looks like this:
