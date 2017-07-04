@@ -1,0 +1,22 @@
+Steps to get a sqlite database file from an Android app and read contents of it.
+
+1. Make sure either the app is debuggable or the phone is rooted.
+
+2. Use the following command via adb to back up the app data file.
+   adb backup -apk -shared -all -f <path>/backup.ab
+   
+   or you may be able to access the app data file through (the app must be debuggable):
+      adb shell
+      run-as yourappPackageName
+      cd /data/data/youappPackageName
+      ls -all
+   
+3. Use abe (Android Backup Extractor) to extract the backup data
+   java -jar abe.jar unpack backup.ab backup.tar ""
+   
+4. Once you get the database file from the app:
+      sqlite3 database_file.db
+      .tables
+      .schema table_name
+      
+5. You may use your own code to extract the data from the database file once you have the table names and schema
